@@ -9,9 +9,12 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 - [ ] Criar estratégias de filtro para garantir a qualidade dos exemplos do dataset
 - [ ] Criar estratégias de geração de exemplos artificiais
 - [ ] Criar estratégias de tradução de datasets
+- [ ] Certificar que o dataset não tem duplicatas
 
 ### Treino
 - [ ] Escolher um modelo base (idealmente com licenças permissivas)
+- [ ] Definir híper-parametros pro treino (podemos pegar inspiração de vários lugares e partir daí)
+- [ ] Decidir que framework usar pra treinar o modelo (tendo em vista eficiência e facilidade de uso)
 
 ### Avaliação
 - [ ] Definir quais benchmarks temos interesse
@@ -37,6 +40,15 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
   - Pares de descrições e código em pt-br?
   - Livros de domínio público?
   - Notícias?
+- Estamos procurando um dataset na ordem de pelo menos 65B de tokens (tamanho do dataset do LAION pra fazer o Llama 2
+aprender alemão). O pessoal to Phi-1 usa um dataset de 7B de tokens, com um dataset pra SFT de 200M 
+- LAION tb usa datasets de poemas e músicas em alemão (eles geram o dataset com GPT4, mas acho que podemos ver se existem poemas e músicas em domínio público que possamos usar) O dataset tem 400+500 exemplos juntos apenas
+
+
+#### Lista de Datasets potencialmente relevantes
+- [Open Platypus](https://huggingface.co/datasets/garage-bAInd/Open-Platypus) -> [OpenSchnabeltier](https://huggingface.co/datasets/LeoLM/OpenSchnabeltier) traduzido pra alemão
+- [OpenAssistant](https://huggingface.co/datasets/OpenAssistant/oasst_top1_2023-08-25) (acho que tem uma versão mais autalizada atualmente) -> [OpenAssistant-DE](https://huggingface.co/datasets/OpenAssistant/OASST-DE) traduzido pra alemão
+- [OSCAR-2301](https://huggingface.co/datasets/oscar-corpus/OSCAR-2301)
 
 ## Recursos (recomendo ler)
 - [LAION treinou um modelo SOTA em Alemão](https://laion.ai/blog/leo-lm/). Podemos pegar bastante inspiração do processo deles
@@ -45,3 +57,4 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 - [Textbooks are all you need](https://arxiv.org/abs/2306.11644) - Aqui eles mostram como você consegue treinar um modelo bem menor com menos dados e atingir performance competitiva se esses dados forem de alta qualidade 
 - [Orca](https://arxiv.org/abs/2306.02707) - Aqui eles seguem uma ideia parecida, mas usando explicações geradas pelo GPT4 pra gerar o dataset
 - [OpenAssistant](https://github.com/LAION-AI/Open-Assistant) - eles criaram uma ferramenta bem legal pra coletar dados de conversas (estilo ChatGPT) e usar isso pra treinar modelos. Dataset é aberto tb, podemos usar as conversas em pt-br, apesar de que não são muitas. Podemos tb tentar traduzir algumas conversas pra pt-br
+- [Continual Pre-Training of Large Language Models: How to (re)warm your model?](https://arxiv.org/abs/2308.04014) - Usar isso pra tentar mitigar o esquecimento dos dados prévios do modelo, quando fizermos nosso Stage-2 pre-training 
