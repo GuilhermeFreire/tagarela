@@ -43,7 +43,9 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 - Estamos procurando um dataset na ordem de pelo menos 65B de tokens (tamanho do dataset do LAION pra fazer o Llama 2
 aprender alemão). O pessoal to Phi-1 usa um dataset de 7B de tokens, com um dataset pra SFT de 200M 
 - LAION tb usa datasets de poemas e músicas em alemão (eles geram o dataset com GPT4, mas acho que podemos ver se existem poemas e músicas em domínio público que possamos usar) O dataset tem 400+500 exemplos juntos apenas
-
+- Uma coisa interessante que observei é que você consegue manter muito das habilidades de fazer tarefas mesmo se o
+modelo for treinado em outra língua. Por exemplo, no meu caso, estava fine-tuning um modelo pra melhorar a escrita de
+textos, todo o dataset de treino era em inglês. Só de curiosidade, eu coloquei um input em português e o modelo fez a tarefa perfeitamente (a saída estava em inglês, mas não precisei traduzir o input nem nada)
 
 #### Lista de Datasets potencialmente relevantes
 - [Open Platypus](https://huggingface.co/datasets/garage-bAInd/Open-Platypus) -> [OpenSchnabeltier](https://huggingface.co/datasets/LeoLM/OpenSchnabeltier) traduzido pra alemão
