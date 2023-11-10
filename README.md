@@ -30,9 +30,13 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 - Em que queremos focar?
   - Assistente genérico?
   - Assistente focado em código?
-  - Temos algum benchmark que queremos focar? e.g. MTBench HumanEval
+  - Temos algum benchmark que queremos focar? e.g. MTBench, HumanEval
     - A gente traduziria para pt-br? Ou faríamos a tradução ser parte da tarefa?
-- 
+- Que tipo de conteúdo queremos que o modelo saiba?
+  - Constituição brasileira?
+  - Pares de descrições e código em pt-br?
+  - Livros de domínio público?
+  - Notícias?
 
 ## Recursos (recomendo ler)
 - [LAION treinou um modelo SOTA em Alemão](https://laion.ai/blog/leo-lm/). Podemos pegar bastante inspiração do processo deles
