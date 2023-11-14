@@ -18,7 +18,7 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 
 ### Avaliação
 - [ ] Definir quais benchmarks temos interesse
-  - [ ] Será que vale a pena traduzir algum benchmark? e.g. O MLBench tem apenas 80 perguntas, daria pra fazer manualmente.
+  - [x] Será que vale a pena traduzir algum benchmark? e.g. O MLBench tem apenas 80 perguntas, daria pra fazer manualmente.
 - [ ] Calcular uma _baseline_ com modelos existentes pra termos uma noção do que quermos atingir e passar
 
 ## Execução (em breve)
