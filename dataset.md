@@ -11,6 +11,9 @@ Algumas anotações e ideias sobre dataset
 - Incluir exemplos de instruções usadas frequentemente
     - Talvez seja o caso de ver que tipo de instruções as pessoas mais usam hoje em dia e crtiar um dataset com base nisso
 
+## Dataset de programação
+- Incluir dados de SQL relacionado a https://yale-lily.github.io/spider
+
 # (extras)
 ## Multi-modal
 - Possível expansão seria incluir imagens no treino do modelo para torná-lo multi-modal
