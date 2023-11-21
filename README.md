@@ -20,6 +20,7 @@ Objetivo do projeto é desenvolver a melhor LLM especializada na língua portugu
 - [ ] Definir quais benchmarks temos interesse
   - [x] Será que vale a pena traduzir algum benchmark? e.g. O MLBench tem apenas 80 perguntas, daria pra fazer manualmente.
 - [ ] Calcular uma _baseline_ com modelos existentes pra termos uma noção do que quermos atingir e passar
+- [ ] Traduzir o [BIG-Bench-Hard](https://github.com/suzgunmirac/BIG-Bench-Hard) pra pt-br
 
 ## Execução (em breve)
 
